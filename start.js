@@ -46,7 +46,7 @@ function gainAccessAndRun(ns, arr, threads, server){
 		var serv = arr[i]; 
 		ns.brutessh(serv);
 		ns.ftpcrack(serv);
-		ns.relaySMTP.exe(serv); 
+		ns.relaySMTP(serv); 
 		ns.nuke(serv);
 		ns.scp("hack.js", serv); 
 		ns.exec("hack.js", serv, threads, server); 
